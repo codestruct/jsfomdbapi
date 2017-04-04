@@ -23,7 +23,9 @@ searchBtn.addEventListener("click", function () {
 function onSearchResult(data){
 
 	if(data.hasOwnProperty("Error")) {
-		errorText.innerHTML = "Movie not found! Please enter another search.";
+		errorText.innerHTML = "Movie not found!<br>Please enter another search.";
+	} else if (errorText.innerHTML != " ") {
+		errorText.innerHTML = " ";
 	}
 
 /*Validate the returned result. If error occurs, display a message*/

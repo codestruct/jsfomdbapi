@@ -43,10 +43,12 @@
 	background: #555;
 }
 
-/* error - helen 03/31/17 */
-p#error {
+/* helen 03/31/17 */
+#error {
 	font-size: 110%;
+	width: 29%;
 	padding: 1.2em 1.6em;
+	margin: 0 0 0 3%;
 }
 
 /* list, details */
@@ -96,7 +98,8 @@ p#error {
 	font-size: 1.8em;
 	line-height: 1.2;
 }
-
+ 
+/* helen 04/04/17 */
 h2 span.subhead {
 	font-size: .6em;
 	font-weight: normal;
@@ -128,6 +131,7 @@ h2 span.subhead {
 	margin: 1.4em 0;
 }
 
+/* helen 04/04/17 */
 hr {
 	margin: .8em 0;
 	height: 1px;

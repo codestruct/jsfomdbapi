@@ -7,7 +7,9 @@
 	<title>Movies</title>
 	<!--Make first clickable template-->
 	<script type="text/x-tmpl-mustache" id="list_template">
+		<!--
 		<p id="error">{{Error}}{{!Added by Helen 03/31}}</p>
+		-->
 		<ul>
 			{{#Search}}
 			<li><a id="{{imdbID}}" href="#">{{Title}}</a></li>
@@ -32,6 +34,7 @@
 		<label>Movie name:</label> <input id="search_text" type="text">
 		<button id="search_button">Search</button>
 	</div>
+	<div id="error"></div><!--Added by Helen 04/04-->
 	<div id="list"></div>
 	<div id="details"></div>
 

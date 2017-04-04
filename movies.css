@@ -97,10 +97,21 @@ p#error {
 	line-height: 1.2;
 }
 
+h2 span.subhead {
+	font-size: .6em;
+	font-weight: normal;
+	color: #888;
+}
+
 #details h3 {
 	font: normal 1em/1.2 sans-serif;
 	color: #555;
 	margin: .4em 0 1em;
+}
+
+#details h3#plot {
+	font-weight: bold;
+	margin: 1.5em 0 0;
 }
 
 #poster {
@@ -116,4 +127,9 @@ p#error {
 	line-height: 1.4em;
 	margin: 1.4em 0;
 }
-	
+
+hr {
+	margin: .8em 0;
+	height: 1px;
+	background: #e8e8e8;
+}

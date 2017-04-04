@@ -16,9 +16,13 @@
 	</script>
 	<!--Make second display template-->
 	<script type="text/x-tmpl-mustache" id="details_template">
-	<h2>{{Title}} ({{Year}})</h2>
-	<h3>Starring: {{Actors}}</h3>
+	<h2>{{Title}} ({{Year}})&nbsp;&nbsp;&nbsp;<span class="subhead">Rated: {{Rated}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Runtime: {{Runtime}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Genre: {{Genre}}<span></h2>
+	<hr>
+	<h3>Director: {{Director}}</h3><!--Added by Helen 04/04-->
+	<h3>Screenplay: {{Writer}}</h3><!--Added by Helen 04/04-->
+	<h3>Cast: {{Actors}}</h3>
 	<img id="poster" src="{{Poster}}">
+	<h3 id="plot">Plot</h3>
 	<p>{{Plot}}</p>
 	</script>
 

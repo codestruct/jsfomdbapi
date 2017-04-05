@@ -14,7 +14,7 @@ searchBtn.addEventListener("click", function () {
 	//Get the search input the user enter
 	var title = searchText.value;
 	//Make the first server call
-	$.get("http://www.omdbapi.com/?s=" + title, null, null, "json")
+	$.get("https://www.omdbapi.com/?s=" + title, null, null, "json")
 		.done(onSearchResult)//Call done event handling function
 		.fail(onSearchFail);//Call fail event handling function
 });

@@ -7,7 +7,6 @@ var listTemplate = document.getElementById("list_template").innerHTML,
 	searchBtn = document.getElementById("search_button");
 	errorText = document.getElementById("error");//Added by Helen Shiu 04/04
 
-/*Add additional variables for added info retrieved from the movie database*/
 
 //Create a click event listener to the button
 searchBtn.addEventListener("click", function () {
@@ -20,16 +19,14 @@ searchBtn.addEventListener("click", function () {
 });
 
 //Create done event handling function
-function onSearchResult(data){
 
+/*Validate the returned result. If error occurs, display a message*/
+function onSearchResult(data){
 	if(data.hasOwnProperty("Error")) {
 		errorText.innerHTML = "Movie not found!<br>Please enter another search.";
 	} else if (errorText.innerHTML != " ") {
 		errorText.innerHTML = " ";
 	}
-
-/*Validate the returned result. If error occurs, display a message*/
-//console.log(data.hasOwnProperty("error"));
 
 	var html = Mustache.render(listTemplate, data);
 	listDiv.innerHTML = html;

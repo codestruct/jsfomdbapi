@@ -52,7 +52,7 @@ function onSearchFail(){
 //Create a event handler function with an event object as parameter
 function getDetails(event) {
 	var id = event.target.id;//The target property returns the element that triggered the event with the corresponding id
-	$.get("http://www.omdbapi.com/?plot&i=" + id, null, null, "json")
+	$.get("https://www.omdbapi.com/?plot&i=" + id, null, null, "json")
 		.done(onDetailResult)
 		.fail(onSearchFail);//Reuse the same fail event handling function
 }
